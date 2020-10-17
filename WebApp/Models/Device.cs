@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace WebApp.Models
+{
+    // Create Device model
+    public class Device
+    {
+        [Key]
+        public virtual int Id { get; set; }
+
+        [Required(ErrorMessage = "The field cannot be empty")]
+        [Display(Name = "Manufacturer of device")]
+        public string ManufacturerOfDevice { get; set; }
+
+        [Required(ErrorMessage = "The field cannot be empty")]
+        [Display(Name = "Type of device")]
+        public string TypeOfDevice { get; set; }
+
+        [Display(Name = "Model of device")]
+        public string ModelOfDevice { get; set; }
+
+        [Display(Name = "Сondition of device")]
+        public string ConditionOfDevice { get; set; }
+    }
+}
