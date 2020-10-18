@@ -23,9 +23,9 @@ Use command "ef database update" in terminal to populate the database with value
 
 ### Project Stack:
 
-• ASP.NET CORE
-• MVC
-• ENTITY FRAMEWORK 
-• HTML
-• CSS
-• BOOTSTRAP 
+1. ASP.NET CORE
+2. MVC
+3. ENTITY FRAMEWORK 
+4. HTML
+5. CSS
+6. BOOTSTRAP 
