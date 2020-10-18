@@ -26,7 +26,7 @@ Use command "ef database update" in terminal to populate the database with value
 1. ASP.NET CORE
 2. MVC
 3. ENTITY FRAMEWORK 
-4. HTML
+4. SQL
 5. CSS
 6. BOOTSTRAP 
-7. SQL
+7. HTML
