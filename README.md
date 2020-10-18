@@ -21,7 +21,7 @@ Use command "ef database update" in terminal to populate the database with value
  3. Manager/AddOrEdit - This method describes the work to delete, edit, and add a new record.  View added visual decorations for buttons using BOOTSTRAP.
 
 
-Project Stack:
+### Project Stack:
 
 • ASP.NET CORE
 • MVC
