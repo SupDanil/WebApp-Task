@@ -9,7 +9,7 @@ namespace WebApp.Models
     // Create Customer model
     public class Customer
     {
-        [Key]
+        [Required]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "The field cannot be empty")]

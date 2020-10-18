@@ -9,7 +9,7 @@ using WebApp.Models;
 namespace WebApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20201017211256__initial")]
+    [Migration("20201018061559__initial")]
     partial class _initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

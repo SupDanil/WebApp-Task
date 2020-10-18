@@ -54,32 +54,32 @@ namespace WebApp.Migrations
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "CustomerName", "OrderDate" },
-                values: new object[] { "1", "Josh", "12.12.2020" });
+                values: new object[] { "1", "Josh", "12.12.2012" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "CustomerName", "OrderDate" },
-                values: new object[] { "2", "Ivan", "12.12.2020" });
+                values: new object[] { "2", "Ivan", "12.12.2012" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "CustomerName", "OrderDate" },
-                values: new object[]{ "3", "Vladimir", "12.12.2020" });
+                values: new object[]{ "3", "Vladimir", "12.12.2012" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "CustomerName", "OrderDate" },
-                values: new object[] { "4", "Boris", "12.12.2020" });
+                values: new object[] { "4", "Boris", "12.12.2012" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "CustomerName", "OrderDate" },
-                values: new object[] { "5", "Oleg", "12.12.2020" });
+                values: new object[] { "5", "Oleg", "12.12.2012" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "CustomerName", "OrderDate" },
-                values: new object[] { "6", "Alexey", "12.12.2020" });
+                values: new object[] { "6", "Alexey", "12.12.2012" });
 
             //Filling the table Devices with values
             migrationBuilder.InsertData(

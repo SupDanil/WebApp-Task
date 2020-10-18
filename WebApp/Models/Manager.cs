@@ -9,7 +9,7 @@ namespace WebApp.Models
     // Create Manager model
     public class Manager
     {
-        [Key]
+        [Required]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "The field cannot be empty")]

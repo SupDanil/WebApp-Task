@@ -9,7 +9,7 @@ namespace WebApp.Models
     // Create Device model
     public class Device
     {
-        [Key]
+        [Required]
         public virtual int Id { get; set; }
 
         [Required(ErrorMessage = "The field cannot be empty")]
