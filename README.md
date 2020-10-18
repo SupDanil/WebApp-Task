@@ -8,7 +8,6 @@ Manager/Index - The start page, which shows three tables from the database, link
 
 Manager/AddOrEdit - This method describes the work to delete, edit, and add a new record.  View added visual decorations for buttons using BOOTSTRAP.
 
-Вместо пункта Series Content как на скриншоте, можешь написать что то типо такого: 
 
 Project Stack:
 
