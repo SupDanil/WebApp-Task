@@ -85,7 +85,7 @@ namespace WebApp.Migrations
             migrationBuilder.InsertData(
                 table: "Devices",
                 columns: new[] { "Id", "ManufacturerOfDevice", "TypeOfDevice", "ModelOfDevice", "ConditionOfDevice" },
-                values: new object[] { "1", "Apple", "Phone", "5s", "Broken 3g module" });
+                values: new object[] { "1", "Apple", "Phone", "5s", "Broken 3g " });
 
             migrationBuilder.InsertData(
                 table: "Devices",
@@ -95,7 +95,7 @@ namespace WebApp.Migrations
             migrationBuilder.InsertData(
                 table: "Devices",
                 columns: new[] { "Id", "ManufacturerOfDevice", "TypeOfDevice", "ModelOfDevice", "ConditionOfDevice" },
-                values: new object[] { "3", "Apple", "Watch", "3", "Pedometer does not work" });
+                values: new object[] { "3", "Apple", "Watch", "3", "Pedometer " });
 
             migrationBuilder.InsertData(
                 table: "Devices",
@@ -110,7 +110,7 @@ namespace WebApp.Migrations
             migrationBuilder.InsertData(
                table: "Devices",
                columns: new[] { "Id", "ManufacturerOfDevice", "TypeOfDevice", "ModelOfDevice", "ConditionOfDevice" },
-               values: new object[] { "6", "Blackberry", "Phone", "KeyOne 4", "Wifi module not working" });
+               values: new object[] { "6", "Blackberry", "Phone", "KeyOne 4", "Wifi module " });
 
             //Filling the table Managers with values
             migrationBuilder.InsertData(
