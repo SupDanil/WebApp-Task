@@ -12,9 +12,9 @@ Manager/AddOrEdit - This method describes the work to delete, edit, and add a ne
 
 Project Stack:
 
-•ASP .NET CORE
-•MVC
-•ENTITY FRAMEWORK 
-•HTML
-•CSS
-•BOOTSTRAP 
+• ASP.NET CORE
+• MVC
+• ENTITY FRAMEWORK 
+• HTML
+• CSS
+• BOOTSTRAP 
