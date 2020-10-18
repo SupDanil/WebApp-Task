@@ -1,7 +1,7 @@
 ﻿@model WebApp.Models.Manager
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Add Manager";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -13,9 +13,11 @@
     <div class="form-group col-md-6">
         <form asp-action="AddOrEdit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for ="Id" />
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
+                <a href="C:\Users\79992\source\repos\WebApp\WebApp\Views\Manager\AddOrEdit.cshtml">C:\Users\79992\source\repos\WebApp\WebApp\Views\Manager\AddOrEdit.cshtml</a>
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -23,16 +25,19 @@
                 <input asp-for="SurName" class="form-control" />
                 <span asp-validation-for="SurName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-row">
+                <div class="form-group col-md-6"> 
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+                </div>
+                <div class="form-group col-md-6">
+                    <a asp-action="Index" class="btn btn-secondary btn-block"><i class="fa fa-table"></i>Back to List</a>
+                </div>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -24,45 +24,42 @@ namespace WebApp.Controllers
             return View(await _context.Managers.ToListAsync());
         }
 
-       
 
-        // GET: Manager/Create
+
+        // GET: Manager/AddOrEdit
         public IActionResult AddOrEdit(int id = 0 )
         {
+            if(id==0)
             return View(new Manager());
+            else
+                return View(_context.Managers.Find(id));
         }
 
 
-        // POST: Manager/Create
+        // POST: Manager/AddOrEdit
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddOrEdit([Bind("Id,Name,SurName")] Manager manager)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(manager);
+                if(manager.Id==0)
+                   _context.Add(manager);
+                else
+                   _context.Update(manager);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(manager);
         }
 
-        // GET: Manager/Delete/5
+        // GET: Manager/Delete/
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var manager = await _context.Managers
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (manager == null)
-            {
-                return NotFound();
-            }
-
-            return View(manager);
+            var manager = await _context.Managers.FindAsync(id);
+            _context.Managers.Remove(manager);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
        
