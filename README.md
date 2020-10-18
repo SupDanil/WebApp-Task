@@ -7,3 +7,14 @@ ManagerController - Main controller where get and post requests are handled
 Manager/Index - The start page, which shows three tables from the database, linked by a key, using SQLserver to communicate with the database.
 
 Manager/AddOrEdit - This method describes the work to delete, edit, and add a new record.  View added visual decorations for buttons using BOOTSTRAP.
+
+Вместо пункта Series Content как на скриншоте, можешь написать что то типо такого: 
+
+Project Stack:
+
+ASP .NET CORE
+MVC
+ENTITY FRAMEWORK 
+HTML
+CSS
+BOOTSTRAP 
