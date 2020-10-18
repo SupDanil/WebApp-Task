@@ -29,3 +29,4 @@ Use command "ef database update" in terminal to populate the database with value
 4. HTML
 5. CSS
 6. BOOTSTRAP 
+7. SQL
