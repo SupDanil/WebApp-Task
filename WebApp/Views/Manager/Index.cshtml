@@ -8,37 +8,110 @@
 <h4>
     List of customers and managers
 </h4>
-<hr/>
 
 
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SurName)
-            </th>
-            <th>
-                <a asp-action="AddOrEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i>Add manager</a>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurName)
-            </td>
-            <td>
-                <a asp-action="AddOrEdit" asp-route-id="@item.Id"><i class="fa fa-marker fa-lg"></i></a> |
-                <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt fa-lg"></i></a>
-            </td>
-        </tr>
-}
-    </tbody>
+<table>
+    <tr>
+        <td>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SurName)
+                        </th>
+                        <th>
+                            <a asp-action="AddOrEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i>Add manager</a>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SurName)
+                            </td>
+                            <td>
+                                <a asp-action="AddOrEdit" asp-route-id="@item.Id"><i class="fa fa-marker fa-lg"></i></a> |
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt fa-lg"></i></a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </td>
+        <td>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            <h4>Customer name</h4>
+                        </th>
+                        <th>
+                            <h4>Type of device</h4>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in ViewBag.Customers)
+                    {
+                        <tr>
+                            <td>
+                                @item.CustomerName
+                            </td>
+                            <td>
+                                @item.OrderDate
+                            </td>
+                            
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+        </td>
+        <td>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            <h4>Manufacturer of device</h4>
+                        </th>
+                        <th>
+                            <h4>Type of device</h4>
+                        </th>
+                        <th>
+                            <h4>Condition of device</h4>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in ViewBag.Device)
+                    {
+                        <tr>
+                            <td>
+                                @item.ManufacturerOfDevice
+                            </td>
+                            <td>
+                                @item.TypeOfDevice
+                            </td>
+                            <td>
+                                @item.ConditionOfDevice
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+        </td>
+    </tr>
 </table>

@@ -21,6 +21,8 @@ namespace WebApp.Controllers
         // GET: Manager
         public async Task<IActionResult> Index()
         {
+            ViewBag.Device = _context.Devices.ToList();
+            ViewBag.Customers = _context.Customers.ToList();
             return View(await _context.Managers.ToListAsync());
         }
 
@@ -32,7 +34,7 @@ namespace WebApp.Controllers
             if(id==0)
             return View(new Manager());
             else
-                return View(_context.Managers.Find(id));
+            return View(_context.Managers.Find(id));
         }
 
 
@@ -65,3 +67,4 @@ namespace WebApp.Controllers
        
     }
 }
+        
