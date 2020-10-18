@@ -45,7 +45,7 @@ namespace WebApp.Controllers
         // GET: Manager/Create
         public IActionResult AddOrEdit(int id = 0 )
         {
-            return View();
+            return View(new Manager());
         }
 
         // POST: Manager/Create

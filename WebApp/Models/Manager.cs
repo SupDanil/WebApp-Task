@@ -13,10 +13,11 @@ namespace WebApp.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "The field cannot be empty")]
-        [Display(Name = "Name of manager")]
+        [Display(Name = "Manager's name")]
         public string Name { get; set; }
 
-        [Display(Name = "Surname of manager")]
+        [Required(ErrorMessage = "The field cannot be empty")]
+        [Display(Name = "Manager's surname")]
         public string SurName { get; set; }
     }
 }
